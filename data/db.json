@@ -1,0 +1,307 @@
+{
+    "products" : [
+        {
+            "id": 1,
+            "price": 2500,
+            "stock" : "instock",
+            "title": "What is Vue.js",
+            "author": "Peter Pan",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "technology",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 4
+        },
+        {
+            "id": 2,
+            "price": 3500,
+            "stock" : "instock",
+            "title": "You dont know JS",
+            "author": "Sayar Gee",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "technology",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 5
+        },
+        {
+            "id": 3,
+            "price": 2500,
+            "stock" : "out of stock",
+            "title": "What about React",
+            "author": "Luffy",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "technology",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 3
+        },
+        {
+            "id": 4,
+            "price": 2500,
+            "stock" : "instock",
+            "title": "Professional developer",
+            "author": "Mr Smith",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "technology",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 2
+        },
+        {
+            "id": 5,
+            "price": 5500,
+            "stock" : "instock",
+            "title": "Figma cookbook",
+            "author": "Peter Pan",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "technology",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 3
+        },
+        {
+            "id": 6,
+            "price": 8500,
+            "stock" : "out of stock",
+            "title": "How to become HTML expert",
+            "author": "Peter Pan",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "technology",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 4
+        },
+        {
+            "id": 7,
+            "price": 4500,
+            "stock" : "instock",
+            "title": "Digital Marketing",
+            "author": "Seo Jun",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "business",
+            "img": "http://t0.gstatic.com/images?q=tbn:ANd9GcTBQZSg-b2LFkLlt9fWndS1w8SONabDZBHf0dtdb3-bqcuKxduL",
+            "rate": 3
+        },
+        {
+            "id": 8,
+            "price": 6500,
+            "stock" : "instock",
+            "title": "Master of Business",
+            "author": "Seo Jun",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "business",
+            "img": "http://t0.gstatic.com/images?q=tbn:ANd9GcTBQZSg-b2LFkLlt9fWndS1w8SONabDZBHf0dtdb3-bqcuKxduL",
+            "rate": 2
+        },
+         {
+            "id": 9,
+            "price": 6500,
+            "stock" : "out of stock",
+            "title": "How to make money",
+            "author": "Seo Jun",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "business",
+            "img": "http://t0.gstatic.com/images?q=tbn:ANd9GcTBQZSg-b2LFkLlt9fWndS1w8SONabDZBHf0dtdb3-bqcuKxduL",
+            "rate": 5
+        },
+        {
+            "id": 10,
+            "price": 9500,
+            "stock" : "instock",
+            "title": "Fanical Management",
+            "author": "Seo Jun",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "business",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 4
+        },
+        {
+            "id": 11,
+            "price": 3500,
+            "stock" : "instock",
+            "title": "Risk Management",
+            "author": "Mario",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "business",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 3
+        },
+        {
+            "id": 12,
+            "price": 12500,
+            "stock" : "instock",
+            "title": "Apply Psychology",
+            "author": "Mario",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "business",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 4
+        },
+        {
+            "id": 13,
+            "price": 6000,
+            "stock" : "instock",
+            "title": "Node.js",
+            "author": "Mario",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "technology",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 4
+        }
+    ],
+
+    "business" : [
+        {
+            "id": 7,
+            "price": 4500,
+            "stock" : "instock",
+            "title": "Digital Marketing",
+            "author": "Seo Jun",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "business",
+            "img": "http://t0.gstatic.com/images?q=tbn:ANd9GcTBQZSg-b2LFkLlt9fWndS1w8SONabDZBHf0dtdb3-bqcuKxduL",
+            "rate": 3
+        },
+        {
+            "id": 8,
+            "price": 6500,
+            "stock" : "instock",
+            "title": "Master of Business",
+            "author": "Seo Jun",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "business",
+            "img": "http://t0.gstatic.com/images?q=tbn:ANd9GcTBQZSg-b2LFkLlt9fWndS1w8SONabDZBHf0dtdb3-bqcuKxduL",
+            "rate": 2
+        },
+         {
+            "id": 9,
+            "price": 6500,
+            "stock" : "out of stock",
+            "title": "How to make money",
+            "author": "Seo Jun",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "business",
+            "img": "http://t0.gstatic.com/images?q=tbn:ANd9GcTBQZSg-b2LFkLlt9fWndS1w8SONabDZBHf0dtdb3-bqcuKxduL",
+            "rate": 5
+        },
+        {
+            "id": 10,
+            "price": 9500,
+            "stock" : "instock",
+            "title": "Fanical Management",
+            "author": "Seo Jun",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "business",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 4
+        },
+        {
+            "id": 11,
+            "price": 3500,
+            "stock" : "instock",
+            "title": "Risk Management",
+            "author": "Mario",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "business",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 3
+        },
+        {
+            "id": 12,
+            "price": 12500,
+            "stock" : "instock",
+            "title": "Apply Psychology",
+            "author": "Mario",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "business",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 4
+        }
+    ],
+
+    "technology" : [
+         {
+            "id": 1,
+            "price": 2500,
+            "stock" : "instock",
+            "title": "What is Vue.js",
+            "author": "Peter Pan",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "tech",
+            "img": "https://picsum.photos/id/1/200/300",
+            "rate": 4
+        },
+        {
+            "id": 2,
+            "price": 3500,
+            "stock" : "instock",
+            "title": "You dont know JS",
+            "author": "Peter Pan",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "tech",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 5
+        },
+        {
+            "id": 3,
+            "price": 2500,
+            "stock" : "out of stock",
+            "title": "What about React",
+            "author": "Peter Pan",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "tech",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 3
+        },
+        {
+            "id": 4,
+            "price": 2500,
+            "stock" : "instock",
+            "title": "Professional developer",
+            "author": "Peter Pan",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "tech",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 2
+        },
+        {
+            "id": 5,
+            "price": 5500,
+            "stock" : "instock",
+            "title": "Figma cookbook",
+            "author": "Peter Pan",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "tech",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 3
+        },
+        {
+            "id": 6,
+            "price": 8500,
+            "stock" : "out of stock",
+            "title": "How to become HTML expert",
+            "author": "Peter Pan",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "tech",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 4
+        },
+        {
+            "id": 13,
+            "price": 6000,
+            "stock" : "instock",
+            "title": "Node.js",
+            "author": "Mario",
+            "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime molliti",
+            "category": "tech",
+            "img": "http://t3.gstatic.com/images?q=tbn:ANd9GcQBMNA8A19vQpNY4bkgadsLhiRUFqBKwKAA6ANrw8VEtOiPrYQJ",
+            "rate": 4
+        }
+    ],
+
+    "book-types" : [
+        { "type" : "Technology" },
+        { "type" : "Business" }
+    ],
+    
+    "authors" : [
+        { "name" : "Peter Pan", "id" : 1 },
+        { "name" : "Seo Jun", "id" : 2 },
+        { "name" : "Mario", "id" : 3 }
+    ]
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;1,300&display=swap');
+
+$primary-font: Montserrat, sans-serif;
+$primary: #ffd615;
+$semi-dark: #555;
+$semi-primary: #f9ff21;
+
+.seim-dark{
+    color: $semi-dark;
+}
+.vh-fix{
+    min-height: 80vh;
+}
+
+.mt-9{
+    margin-top: 90px;
+}
+
+.mt-8{
+    margin-top: 70px;
+}
+
+.pointer{
+    cursor: pointer
+}
