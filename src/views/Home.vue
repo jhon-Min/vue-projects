@@ -4,12 +4,11 @@
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
 
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="../assets/img/hero/bg-img.jpg" class=" hero-img vh-85" alt="...">
+          <img src="../assets/img/hero/hero.png" class=" hero-img vh-85" alt="...">
           <div class="carousel-caption custom-slide">
             <!-- Hero Content -->
             <div class="container hero-content">
@@ -36,10 +35,9 @@
           </div>
         </div>
 
-        <div class="carousel-item">
+        <!-- <div class="carousel-item">
           <img src="../assets/img/hero/hero.png" class=" hero-img vh-85" alt="...">
            <div class="carousel-caption custom-slide">
-            <!-- Hero Content -->
             <div class="container hero-content">
               <div class="d-flex justify-content-center justify-content-lg-start align-items-center vh-fix">
                 <div class="text-center text-md-start">
@@ -61,7 +59,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="carousel-item">
           <img src="../assets/img/hero/travel.jpg" class=" hero-img vh-85" alt="...">

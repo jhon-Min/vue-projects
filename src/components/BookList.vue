@@ -15,7 +15,7 @@
         All Books
       </a>
 
-      <div class="row mt-4">
+      <div class="row mt-4 justify-content-center justify-content-md-start">
         <div
         class="col-5 col-md-4 col-lg-3 mb-5"
         v-for="book in books"

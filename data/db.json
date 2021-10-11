@@ -146,8 +146,8 @@
     ],
 
     "book-types" : [
-        { "type" : "Technology" },
-        { "type" : "Business" }
+        { "name" : "Technology" },
+        { "name" : "Business" }
     ],
     
     "authors" : [

@@ -184,39 +184,57 @@
       <div class="container d-flex justify-content-center">
         <div class="nav-menu">
           <div class="d-inline-block">
-            <a href="" class="link">
-              All Books
-              <i class="feather-chevron-down"></i>
-            </a>
+           <DropList>
+             All Books
+             <i class="feather-chevron-down"></i>
+             <template v-slot:lists>
+                <li><a class="dropdown-item" href="#">Currently Not Available!</a></li>
+             </template>
+           </DropList>
           </div>
 
-          <div class="d-down d-inline-block" data-dropdown>
-            <button class="link" data-dropdown-button>
+          <div class="d-inline-block">
+            <DropList>
               Authors
               <i class="feather-chevron-down"></i>
-            </button>
-            <div class="d-menu">DropDown Content</div>
+              <template v-slot:lists>
+                  <div v-for="author in authors" :key="author.id">
+                    <li><a class="dropdown-item" href="#">{{author.name}}</a></li>
+                  </div>
+              </template>
+           </DropList>
           </div>
 
           <div class="d-inline-block">
-            <a href="" class="link">
+            <DropList>
               Type of Books
               <i class="feather-chevron-down"></i>
-            </a>
+              <template v-slot:lists>
+                  <div v-for="category in categories" :key="category.id">
+                    <li><a class="dropdown-item" href="#">{{category.name}}</a></li>
+                  </div>
+              </template>
+           </DropList>
           </div>
 
           <div class="d-inline-block">
-            <a href="" class="link">
-              Audio Books
-              <i class="feather-chevron-down"></i>
-            </a>
+            <DropList>
+             Audio Books
+             <i class="feather-chevron-down"></i>
+             <template v-slot:lists>
+                <li><a class="dropdown-item" href="#">Currently Not Available!</a></li>
+             </template>
+           </DropList>
           </div>
 
           <div class="d-inline-block">
-            <a href="" class="link">
-              Services
-              <i class="feather-chevron-down"></i>
-            </a>
+            <DropList>
+             Services
+             <i class="feather-chevron-down"></i>
+             <template v-slot:lists>
+                <li><a class="dropdown-item" href="#">Currently Not Available!</a></li>
+             </template>
+           </DropList>
           </div>
         </div>
       </div>
@@ -225,15 +243,27 @@
 </template>
 
 <script>
+import getAuthors from '../composables/getAuthors'
+import getCategory from '../composables/getCategory'
+import DropList from '../components/layout/DropDown.vue'
+
 export default {
   name: "NavBar",
+  components: { DropList },
   setup() {
-    return {};
+    const {authors, load} = getAuthors();
+    const {categories, categoryLoad} = getCategory();
+
+    console.log(authors)
+    load()
+    categoryLoad()
+    return {authors, categories};
   },
 
   data() {
     return {
       show: false,
+      dropdownBtn: false,
       carts: this.globalArray
     };
   },
@@ -305,7 +335,7 @@ export default {
       font-family: $primary-font;
 
       &:hover {
-        color: #1e2a78 !important;
+        color: black !important;
       }
     }
   }
@@ -333,6 +363,20 @@ export default {
       outline: none;
     }
   }
+}
+
+.link{
+    text-decoration: none;
+    background: none;
+    margin: 0px 23px;
+    color: #555;
+    font-weight: 500;
+    transition: 0.5s;
+    border: none;
+
+      &:hover{
+        color: black;
+      }
 }
 
 .brand-name {

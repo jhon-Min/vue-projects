@@ -28,7 +28,7 @@
       <ul class="list-inline text-center">
         <li class="fw-bold title">
           <router-link :to="{ name: 'Detail', params: {id: book.id}}" class="text-decoration-none text-dark text-nowrap pointer">
-            {{ cutTxt(book.title) }}
+            {{ cutTxt(book.title, 12) }}
           </router-link>
         </li>
         <li class="small seim-dark fw-bold"> {{ book.author }} </li>
@@ -95,9 +95,9 @@ export default {
       }
     },
 
-    cutTxt(x) {
-      if(x.length > 15){
-          return x.substring(0, 15) + '...'
+    cutTxt(x, y) {
+      if(x.length > y){
+          return x.substring(0, y) + '...'
       }else{
           return x
       }             
@@ -109,7 +109,7 @@ export default {
 <style lang="scss">
 .book-card {
     border: none !important;
-    width: 12.8rem;
+    width: 12rem;
 
     figure {
       background: blue !important;
@@ -189,5 +189,30 @@ export default {
         font-size: 14px;
       }
     }
+  }
+
+  @media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+    .book-card{
+      width: 8rem;
+    }
+
+    .book-cv{
+        height: 180px !important;
+    }
+
+    .title {
+      font-size: 16px;
+    }
+    .price {
+      font-size: 16px;
+    }
+    .rating {
+      .fa-star {
+        color: #666;
+        margin-right: 1px;
+        font-size: 13px;
+      }
+    } 
   }
 </style>
