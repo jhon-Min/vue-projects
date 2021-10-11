@@ -9,7 +9,7 @@
               <i class="fas fa-heart"></i>
             </div>
 
-            <div class="add-cart-icon">
+            <div class="add-cart-icon" @click="addCart(book)">
               <i class="fas fa-shopping-cart"></i>
             </div>
           </div>
@@ -54,6 +54,47 @@ export default {
   },
 
   methods: {
+    addCart(book) {
+      let Toast = this.$swal.mixin({
+          toast: true,
+          position: 'top-end',
+          showConfirmButton: false,
+          timer: 1200,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+          toast.addEventListener('mouseenter', this.$swal.stopTimer)
+          toast.addEventListener('mouseleave', this.$swal.resumeTimer)
+          }
+      })
+
+     if(book.stock == 'instock'){
+        Toast.fire({
+          icon: 'success',
+          title: `${book.title} is added in the cart.`
+        })
+
+        let checkCarts = this.$root.carts.find(cart => cart.id == book.id)
+          if(checkCarts){
+            this.$swal.fire({
+              icon: 'info',
+              title: 'Oops.....',
+              text: `${book.title} book is already added in the cart.`,
+            })
+          }else{
+            this.$root.carts.push({...book, qty: 1, sub: book.price})
+            console.log(this.$root.carts)
+        }  
+      }else{
+        this.$swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: `${book.title} is currently out of stock.`,
+          
+        })
+        console.log('out of stock')
+      }
+    },
+
     cutTxt(x) {
       if(x.length > 15){
           return x.substring(0, 15) + '...'
