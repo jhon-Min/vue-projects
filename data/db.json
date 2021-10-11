@@ -153,8 +153,9 @@
     "authors" : [
         { "name" : "Peter Pan", "id" : 1 },
         { "name" : "Seo Jun", "id" : 2 },
-        { "name" : "Mario", "id" : 3 }
+        { "name" : "Mario", "id" : 3 },
         { "name" : "Sayar Gee", "id" : 4 },
+        { "name" : "Mr Smith", "id" : 5 },
         { "name" : "Luffy", "id" : 6 }
     ]
 }
