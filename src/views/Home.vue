@@ -26,6 +26,7 @@
                         type="text"
                         class=""
                         placeholder="Search Book here..."
+                        v-model="search"
                       />
                     </div>
                   </div>
@@ -84,11 +85,12 @@
   </div>
 
   <div class="container">
-    <BookList :books="books" />
+    <BookList :books="filterBooks" />
   </div>
 </template>
 
 <script>
+import { computed, ref } from '@vue/reactivity';
 import BookList from "../components/BookList.vue";
 import getBooks from "../composables/getBooks";
 
@@ -96,10 +98,17 @@ export default {
   name: "Home",
   components: { BookList },
   setup() {
+    const search = ref('');
     const { books, error, load } = getBooks();
 
+    console.log(books)
+
+    const filterBooks = computed(() => {
+      return books.value.filter(book => book.title.toLowerCase().includes(search.value.trim().toLowerCase()) );
+    })
+
     load();
-    return { books };
+    return { books, search, filterBooks };
   },
 };
 </script>
