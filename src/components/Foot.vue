@@ -27,7 +27,7 @@
                             </li>
         
                             <li>
-                                <i class="fab fa-facebook-f text-primary me-2"></i>
+                                <i class="fab fa-facebook-f me-2"></i>
                                 <a href="" class="text-decoration-none text-white">
                                     SkyBook Myanmar Page
                                 </a>
