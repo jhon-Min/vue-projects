@@ -27,14 +27,17 @@
     <div class="px-2 pt-3">
       <ul class="list-inline text-center">
         <li class="fw-bold title">
-          <router-link :to="{ name: 'Detail', params: {id: book.id}}" class="text-decoration-none text-dark text-nowrap pointer">
+          <router-link
+            :to="{ name: 'Detail', params: { id: book.id } }"
+            class="text-decoration-none text-dark text-nowrap pointer"
+          >
             {{ cutTxt(book.title, 12) }}
           </router-link>
         </li>
-        <li class="small seim-dark fw-bold"> {{ book.author }} </li>
-        <li class="mt-1 small price"> {{ book.price }} </li>
+        <li class="small seim-dark fw-bold">{{ book.author }}</li>
+        <li class="mt-1 small price">{{ book.price }}</li>
         <li>
-         <Rating :book="book" />
+          <Rating :book="book" />
         </li>
       </ul>
     </div>
@@ -42,8 +45,8 @@
 </template>
 
 <script>
-import Rating from './Rating.vue'
-import VueStar from 'vue-star'
+import Rating from "./Rating.vue";
+import VueStar from "vue-star";
 
 export default {
   name: "Single Book",
@@ -56,163 +59,162 @@ export default {
   methods: {
     addCart(book) {
       let Toast = this.$swal.mixin({
-          toast: true,
-          position: 'top-end',
-          showConfirmButton: false,
-          timer: 1200,
-          timerProgressBar: true,
-          didOpen: (toast) => {
-          toast.addEventListener('mouseenter', this.$swal.stopTimer)
-          toast.addEventListener('mouseleave', this.$swal.resumeTimer)
-          }
-      })
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 1200,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+          toast.addEventListener("mouseenter", this.$swal.stopTimer);
+          toast.addEventListener("mouseleave", this.$swal.resumeTimer);
+        },
+      });
 
-     if(book.stock == 'instock'){
+      if (book.stock == "instock") {
         Toast.fire({
-          icon: 'success',
-          title: `${book.title} is added in the cart.`
-        })
+          icon: "success",
+          title: `${book.title} is added in the cart.`,
+        });
 
-        let checkCarts = this.$root.carts.find(cart => cart.id == book.id)
-          if(checkCarts){
-            this.$swal.fire({
-              icon: 'info',
-              title: 'Oops.....',
-              text: `${book.title} book is already added in the cart.`,
-            })
-          }else{
-            this.$root.carts.push({...book, qty: 1, sub: book.price})
-            console.log(this.$root.carts)
-        }  
-      }else{
+        let checkCarts = this.$root.carts.find((cart) => cart.id == book.id);
+        if (checkCarts) {
+          this.$swal.fire({
+            icon: "info",
+            title: "Oops.....",
+            text: `${book.title} book is already added in the cart.`,
+          });
+        } else {
+          this.$root.carts.push({ ...book, qty: 1, sub: book.price });
+          console.log(this.$root.carts);
+        }
+      } else {
         this.$swal.fire({
-          icon: 'error',
-          title: 'Oops...',
+          icon: "error",
+          title: "Oops...",
           text: `${book.title} is currently out of stock.`,
-          
-        })
-        console.log('out of stock')
+        });
+        console.log("out of stock");
       }
     },
 
     cutTxt(x, y) {
-      if(x.length > y){
-          return x.substring(0, y) + '...'
-      }else{
-          return x
-      }             
-    }
+      if (x.length > y) {
+        return x.substring(0, y) + "...";
+      } else {
+        return x;
+      }
+    },
   },
 };
 </script>
 
 <style lang="scss">
 .book-card {
-    border: none !important;
-    width: 12rem;
+  border: none !important;
+  width: 12rem;
 
-    figure {
-      background: blue !important;
-      border-radius: 5px;
+  figure {
+    background: blue !important;
+    border-radius: 5px;
 
-      .book-cv {
-        border-radius: 5px !important;
-        height: 230px;
-        width: 100%;
+    .book-cv {
+      border-radius: 5px !important;
+      height: 230px;
+      width: 100%;
+    }
+
+    .book-hov-eff {
+      background: black;
+      opacity: 0.8;
+
+      .fav-icon,
+      .add-cart-icon {
+        background: white;
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        // backdrop-filter: blur(10px);
+
+        .fa-heart,
+        .fa-shopping-cart {
+          color: #555;
+        }
       }
 
-      .book-hov-eff {
-        background: black;
-        opacity: 0.8;
-
-        .fav-icon,
-        .add-cart-icon {
-          background: white;
-          width: 33px;
-          height: 33px;
-          border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-          // backdrop-filter: blur(10px);
-
-          .fa-heart,
+      .fav-icon {
+        &:hover {
+          .fa-heart {
+            color: red;
+          }
+        }
+      }
+      .add-cart-icon {
+        &:hover {
           .fa-shopping-cart {
-            color: #555;
-          }
-        }
-
-        .fav-icon {
-          &:hover {
-            .fa-heart {
-              color: red;
-            }
-          }
-        }
-        .add-cart-icon {
-          &:hover {
-            .fa-shopping-cart {
-              color: #6c757d;
-            }
-          }
-        }
-
-        .view {
-          background: white;
-          width: 42px;
-          height: 42px;
-          border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          cursor: pointer;
-
-          .fa-book-open {
-            color: #feb600;
-            font-size: 20px;
+            color: #6c757d;
           }
         }
       }
-    }
 
-    .title {
-      font-size: 18px;
-    }
-    .price {
-      font-size: 17px;
-    }
-    .rating {
-      .fa-star {
-        color: #666;
-        margin-right: 2px;
-        font-size: 14px;
+      .view {
+        background: white;
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .fa-book-open {
+          color: #feb600;
+          font-size: 20px;
+        }
       }
     }
   }
 
-  @media only screen and (max-width: 425px){
-	/*Small smartphones [325px -> 425px]*/
-    .book-card{
-      width: 8rem;
-    }
-
-    .book-cv{
-        height: 180px !important;
-    }
-
-    .title {
-      font-size: 16px;
-    }
-    .price {
-      font-size: 16px;
-    }
-    .rating {
-      .fa-star {
-        color: #666;
-        margin-right: 1px;
-        font-size: 13px;
-      }
-    } 
+  .title {
+    font-size: 18px;
   }
+  .price {
+    font-size: 17px;
+  }
+  .rating {
+    .fa-star {
+      color: #666;
+      margin-right: 2px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .book-card {
+    width: 8rem;
+  }
+
+  .book-cv {
+    height: 180px !important;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+  .price {
+    font-size: 16px;
+  }
+  .rating {
+    .fa-star {
+      color: #666;
+      margin-right: 1px;
+      font-size: 13px;
+    }
+  }
+}
 </style>

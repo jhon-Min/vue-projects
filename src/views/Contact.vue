@@ -4,7 +4,7 @@
       <div class="col-12 col-md-8 col-lg-5">
         <div class="card shadow">
           <div class="card-body">
-            <h3>About Page</h3>
+            <h3>Contact Page</h3>
             <hr />
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod,
@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: "About Page",
+  name: "Contact Page",
 };
 </script>
 

@@ -1,86 +1,91 @@
 <template>
   <div v-if="book">
     <transition appear name="fade">
-     <div>
+      <div>
         <div class="container item-detail">
-        <div class="row justify-content-sm-start justify-content-center">
-          <div class="col-12 col-md-4 col-lg-4">
-            <img :src="book.img" alt="" class="img-fluid w-75 shadow" />
-          </div>
-
-          <div class="col-12 col-md-7 col-lg-8">
-            <div
-              class="
-            d-flex
-            justify-content-center justify-content-md-start
-            align-items-center
-          "
-            >
-              <h2>{{ book.title }}</h2>
-              <span
-                class="badge bg-success ms-3"
-                v-if="book.stock == 'instock'"
-                >{{ book.stock }}</span
-              >
-              <span class="badge bg-danger ms-3" v-else>{{ book.stock }}</span>
+          <div class="row justify-content-center">
+            <div class="col-10 col-md-4 col-lg-4">
+              <img
+                :src="book.img"
+                alt=""
+                class="img-fluid detail-img w-75 shadow"
+              />
             </div>
 
-            <div class="item-status">
-              <p class="seim-dark">
-                <span class="fs-5">{{ book.author }}</span> |
-                {{ book.category }}
-              </p>
-              <p class="fs-5 fw-bold mb-1">{{ book.price }} Ks</p>
-              <Rating :book="book" />
-              <p class="mt-5">
-                {{ book.description }}
-              </p>
-              <button
-                class="btn btn-warning mt-4"
-                v-if="book.stock == 'instock'"
-                @click="addCart(book)"
-              >
-                <span class="me-2"><i class="feather-shopping-cart"></i></span>
-                Add to Cart
-              </button>
-
-              <button class="btn btn-warning mt-4 disabled" v-else>
-                <span class="me-2"><i class="feather-shopping-cart"></i></span>
-                Add to Cart
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container mb-5">
-        <h2 class="text-center mb-5">Related Book</h2>
-        <div class="row">
-          <Carousel :settings="settings" :breakpoints="breakpoints">
-            <Slide v-for="item in books" :key="item.id">
-              <div>
-                <div
-                  class="carousel__item"
-                  v-if="book.id !== item.id && book.category == item.category"
+            <div class="col-10 col-md-7 col-lg-8 mt-5 mt-md-0">
+              <div class="d-flex align-items-center">
+                <h2>{{ book.title }}</h2>
+                <span
+                  class="badge bg-success ms-3"
+                  v-if="book.stock == 'instock'"
+                  >{{ book.stock }}</span
                 >
-                  <SingleBook :book="item" />
-                </div>
+                <span class="badge bg-danger ms-3" v-else>{{
+                  book.stock
+                }}</span>
               </div>
-            </Slide>
-            <template #addons>
-              <Navigation />
-            </template>
-          </Carousel>
+
+              <div class="item-status">
+                <p class="seim-dark">
+                  <span class="fs-5">{{ book.author }}</span> |
+                  {{ book.category }}
+                </p>
+                <p class="fs-5 fw-bold mb-1">{{ book.price }} Ks</p>
+                <Rating :book="book" />
+                <p class="mt-3 mt-md-5">
+                  {{ book.description }}
+                </p>
+                <button
+                  class="btn btn-warning mt-4 btn-cart"
+                  v-if="book.stock == 'instock'"
+                  @click="addCart(book)"
+                >
+                  <span class="me-2"
+                    ><i class="feather-shopping-cart"></i
+                  ></span>
+                  Add to Cart
+                </button>
+
+                <button class="btn btn-warning mt-4 disabled btn-cart" v-else>
+                  <span class="me-2"
+                    ><i class="feather-shopping-cart"></i
+                  ></span>
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Related Book -->
+        <div class="container mb-5 d-none d-md-block">
+          <h2 class="text-center mb-5">Related Book</h2>
+          <div class="row">
+            <Carousel :settings="settings" :breakpoints="breakpoints">
+              <Slide v-for="item in books" :key="item.id">
+                <div>
+                  <div
+                    class="carousel__item"
+                    v-if="book.id !== item.id && book.category == item.category"
+                  >
+                    <SingleBook :book="item" />
+                  </div>
+                </div>
+              </Slide>
+              <template #addons>
+                <Navigation />
+              </template>
+            </Carousel>
+          </div>
         </div>
       </div>
-     </div>
     </transition>
   </div>
   <div v-else>
     <div class="container">
       <div
         class="d-flex justify-content-center align-items-center"
-        style="height: 50vh;"
+        style="height: 50vh"
       >
         <Spinner />
       </div>
@@ -128,7 +133,7 @@ export default {
       },
       breakpoints: {
         700: {
-          itemsToShow: 3,
+          itemsToShow: 2,
           itemsToScroll: 2,
           snapAlign: "start",
         },
@@ -179,7 +184,19 @@ export default {
 
 <style lang="scss" scoped>
 .item-detail {
-  padding: 100px 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .detail-img {
+    width: 180px !important;
+  }
+
+  .btn-cart {
+    width: 100%;
+  }
 }
 
 .carousel__slide {
@@ -187,7 +204,8 @@ export default {
   margin: 0px 8px 0px 8px;
 }
 
-.fade-enter-active, .fade-leave-active{
+.fade-enter-active,
+.fade-leave-active {
   // transition: opacity 2s ease;
   animation: fadeIn;
   animation-duration: 2s;

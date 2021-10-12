@@ -17,12 +17,11 @@
 
       <div class="row mt-4 justify-content-center justify-content-md-start">
         <div
-        class="col-5 col-md-4 col-lg-3 mb-5"
-        v-for="book in books"
-        :key="book.id"
+          class="col-5 col-md-4 col-lg-3 mb-5"
+          v-for="book in books"
+          :key="book.id"
         >
           <SingleBook :book="book" />
-          
         </div>
       </div>
     </div>
@@ -34,7 +33,7 @@ import SingleBook from "./sub-component/SingleBook.vue";
 
 export default {
   name: "Book List",
-  components: { 
+  components: {
     SingleBook,
   },
   props: ["books"],
@@ -42,18 +41,17 @@ export default {
 </script>
 
 <style lang="scss">
-
 .content {
   margin: 100px 0px;
 }
 
-@media only screen and (max-width: 1200px){
-    /*Tablets [601px -> 1200px]*/
+@media only screen and (max-width: 1200px) {
+  /*Tablets [601px -> 1200px]*/
 }
-@media only screen and (max-width: 600px){
-	/*Big smartphones [426px -> 600px]*/
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
 }
-@media only screen and (max-width: 425px){
-	/*Small smartphones [325px -> 425px]*/
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
 }
 </style>
