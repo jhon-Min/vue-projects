@@ -349,7 +349,7 @@ export default {
     margin: 0 8px;
 
     a {
-      color: #555 !important;
+      color: #555;
       transition: 0.5s;
       font-weight: bold;
       font-family: $primary-font;

@@ -14,13 +14,16 @@
             </div>
           </div>
 
-          <a to="#" class="mt-9 text-decoration-none pointer">
+          <router-link
+            :to="{ name: 'Detail', params: { id: book.id } }"
+            class="mt-9 text-decoration-none pointer"
+          >
             <div class="d-flex justify-content-center">
               <div class="view">
                 <i class="fas fa-book-open"></i>
               </div>
             </div>
-          </a>
+          </router-link>
         </div>
       </figcaption>
     </figure>
