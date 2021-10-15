@@ -1,1 +1,18 @@
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  .side-bar {
+    overflow-y: scroll;
+  }
 
+  .side-bar::-webkit-scrollbar {
+    width: 11px; /* width of the entire scrollbar */
+  }
+  .side-bar::-webkit-scrollbar-track {
+    background: #ffd615; /* color of the tracking area */
+  }
+  .side-bar::-webkit-scrollbar-thumb {
+    background-color: blue; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid #ffd615; /* creates padding around scroll thumb */
+  }
+}

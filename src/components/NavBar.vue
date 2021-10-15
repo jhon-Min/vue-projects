@@ -2,59 +2,7 @@
   <div class="">
     <!-- Sidebar -->
     <transition name="slide">
-      <div class="side-bar vh-100" v-if="show">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12">
-              <div class="d-flex align-items-center mt-3">
-                <button
-                  class="btn btn-hide animate__animated animate__slideInRight"
-                  @click="closeSideBar"
-                >
-                  <i class="feather-x-circle fs-1 text-danger"></i>
-                </button>
-
-                <!-- Profile -->
-                <div class="d-flex align-items-center">
-                  <div class="ms-5">
-                    <a
-                      class="text-decoration-none fw-bold me-2 small seim-dark"
-                      href="#"
-                    >
-                      Seo Jun
-                    </a>
-                  </div>
-
-                  <div class="profile">
-                    <img src="../assets/img/profile.jpg" alt="" />
-                  </div>
-                </div>
-              </div>
-
-              <hr class="semi-dark" />
-
-              <div class="side-box">
-                <ul class="list-inline mt-5">
-                  <li>
-                    <router-link :to="{ name: 'Home' }">Home</router-link>
-                  </li>
-                  <li>
-                    <router-link :to="{ name: 'About' }">About Us</router-link>
-                  </li>
-                  <li>
-                    <router-link :to="{ name: 'Contact' }">Contact</router-link>
-                  </li>
-                  <li>
-                    <router-link :to="{ name: 'Services' }"
-                      >Services</router-link
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Sidebar v-if="show" @close="showSideBar" />
     </transition>
 
     <!-- First Section -->
@@ -145,7 +93,7 @@
           </div>
 
           <div class="profile d-none d-lg-block">
-            <img src="assets/img/profile.jpg" alt="" />
+            <img src="../assets/img/profile.jpg" alt="" />
           </div>
         </div>
 
@@ -190,6 +138,7 @@
       </div>
     </nav>
 
+    <!-- Category Bar -->
     <div class="bg-theme py-2 d-none d-md-block">
       <div class="container d-flex justify-content-center">
         <div class="nav-menu">
@@ -266,10 +215,11 @@
 import getAuthors from "../composables/getAuthors";
 import getCategory from "../composables/getCategory";
 import DropList from "../components/layout/DropDown.vue";
+import Sidebar from "../components/Sidebar.vue";
 
 export default {
   name: "NavBar",
-  components: { DropList },
+  components: { DropList, Sidebar },
   setup() {
     const { authors, load } = getAuthors();
     const { categories, categoryLoad } = getCategory();
@@ -287,13 +237,8 @@ export default {
       carts: this.globalArray,
     };
   },
-
   methods: {
     showSideBar() {
-      this.show = !this.show;
-    },
-
-    closeSideBar() {
       this.show = !this.show;
     },
   },
